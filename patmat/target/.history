@@ -1,0 +1,16 @@
+console
+l list = List("a", "b", "a", "c", "a", "d", "b", "f", "z")
+val list = List("a", "b", "a", "c", "a", "d", "b", "f", "z")
+help
+exit
+console
+compile
+lue right is not a member of patmat.Huffman.CodeTree
+lue left is not a member of patmat.Huffman.CodeTree
+bstract class CodeTree
+se class Fork(left: CodeTree, right: CodeTree, chars: List[Char], weight: Int) extends CodeTree
+se class Leaf(char: Char, weight: Int) extends CodeTree
+abstract class CodeTree
+compile
+submit arriveder4i@gmail.com PxfooIIXx2FKtncy
+test
