@@ -1,0 +1,9 @@
+INFO     <2018-06-30 17:38:23,922> (client.py:83) - Initializing project - /Users/valentina/git/scala-course/forcomp
+WARNING  <2018-06-30 17:38:28,957> (protocol.py:65) - Response has not been handled: 
+{'implementation': {'name': 'ENSIME'},
+ 'typehint': 'ConnectionInfo',
+ 'version': '1.9.6'}
+WARNING  <2018-06-30 17:38:29,958> (protocol.py:65) - Response has not been handled: 
+{'code': 105,
+ 'detail': 'Initializing Analyzer. Please wait...',
+ 'typehint': 'SendBackgroundMessageEvent'}
