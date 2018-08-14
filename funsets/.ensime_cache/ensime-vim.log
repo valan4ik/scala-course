@@ -1,0 +1,13 @@
+INFO     <2018-06-28 19:26:00,555> (client.py:83) - Initializing project - /Users/valentina/git/scala-course/funsets
+WARNING  <2018-06-28 19:26:05,580> (protocol.py:65) - Response has not been handled: 
+{'implementation': {'name': 'ENSIME'},
+ 'typehint': 'ConnectionInfo',
+ 'version': '1.9.6'}
+WARNING  <2018-06-28 19:26:06,583> (protocol.py:65) - Response has not been handled: 
+{'code': 105,
+ 'detail': 'Initializing Analyzer. Please wait...',
+ 'typehint': 'SendBackgroundMessageEvent'}
+WARNING  <2018-06-28 19:26:07,586> (protocol.py:65) - Response has not been handled: 
+{'code': 105,
+ 'detail': 'Initializing Analyzer. Please wait...',
+ 'typehint': 'SendBackgroundMessageEvent'}
