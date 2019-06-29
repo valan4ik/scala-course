@@ -81,7 +81,7 @@ trait GameDef {
    * This function returns the block at the start position of
    * the game.
    */
-  def startBlock: Block = ???
+  def startBlock: Block = Block(startPos, startPos)
 
 
   /**
@@ -132,7 +132,19 @@ trait GameDef {
      * Returns the list of blocks that can be obtained by moving
      * the current block, together with the corresponding move.
      */
-    def neighbors: List[(Block, Move)] = ???
+    def neighbors: List[(Block, Move)] = {
+//      case object Left  extends Move
+//      case object Right extends Move
+//      case object Up    extends Move
+//      case object Down  extends Move
+      if (b1.col == b2.col) { // cube is stading
+        List(
+          (Block(Pos(b1.row, b1.col -1), Pos(b2.row, b2.col-1)), Left)
+        )
+      } else { // cube is laying
+        List()
+      }
+    }
 
     /**
      * Returns the list of positions reachable from the current block
@@ -143,11 +155,11 @@ trait GameDef {
     /**
      * Returns `true` if the block is standing.
      */
-    def isStanding: Boolean = ???
+    def isStanding: Boolean = b1 == b2
 
     /**
      * Returns `true` if the block is entirely inside the terrain.
      */
-    def isLegal: Boolean = ???
+    def isLegal: Boolean = terrain(b1) && terrain(b2)
   }
 }
