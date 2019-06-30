@@ -133,24 +133,16 @@ trait GameDef {
      * the current block, together with the corresponding move.
      */
     def neighbors: List[(Block, Move)] = {
-//      case object Left  extends Move
-//      case object Right extends Move
-//      case object Up    extends Move
-//      case object Down  extends Move
-      if (b1.col == b2.col) { // cube is stading
-        List(
-          (Block(Pos(b1.row, b1.col -1), Pos(b2.row, b2.col-1)), Left)
-        )
-      } else { // cube is laying
-        List()
-      }
+      List((right, Right), (left, Left), (up, Up), (down, Down))
     }
 
     /**
      * Returns the list of positions reachable from the current block
      * which are inside the terrain.
      */
-    def legalNeighbors: List[(Block, Move)] = ???
+    def legalNeighbors: List[(Block, Move)] = {
+      neighbors.filter(_._1.isLegal)
+    }
 
     /**
      * Returns `true` if the block is standing.
